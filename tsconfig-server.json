@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "server/dist",
+    "allowJs": true,
+    "lib": ["dom", "es6"],
+    "baseUrl": "./server",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "server/**/*.ts",
+    "server/tests/**/*.spec.ts"
+  ],
+  "files": [
+    "server/index.ts"
+  ]
+}
