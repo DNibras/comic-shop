@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './style.css'
 
 const Search = () => {
   const [isActive, setIsActive] = useState(false);

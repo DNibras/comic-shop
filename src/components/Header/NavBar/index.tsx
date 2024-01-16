@@ -1,9 +1,10 @@
+import './style.css'
 
 const NavBar = () => {
 
   return (
-    <div className="header-navbar">
-      <ul>
+    <div>
+      <ul className="header-nav-bar">
         <li>
           <a href="#">
             <img className="icon-header" src="../img/orders.png" alt="" />

@@ -1,0 +1,11 @@
+.search-container {
+  display: none;
+}
+
+.search-options-container {
+  display: none;
+}
+
+.search-options-container__enabled {
+  display: none;
+}
