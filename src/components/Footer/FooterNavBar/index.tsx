@@ -1,3 +1,10 @@
+import './style.css'
+import vk from './images/vk.png';
+import youtube from './images/youtube.png';
+import telegram from './images/telegram.png';
+import mastercard from './images/mastercard.png';
+import visa from './images/visa.png';
+
 
 const FooterNavBar = () => {
 
@@ -6,12 +13,18 @@ const FooterNavBar = () => {
       <ul>
         <h2>Контакты</h2>
         <li>
-          <p>Горячая линия:</p>
-          <p>8 800 666 13 44</p>
+          <p>
+            Горячая линия:
+            <br />
+            8 800 666 13 44
+          </p>
         </li>
         <li>
-          <p>Электронная почта:</p>
-          <a href="">office@FirstPage.ru</a>
+          <p>
+            Электронная почта:
+            <br />
+            <a href="">office@FirstPage.ru</a>
+          </p>
         </li>
         <li>
           ООО «Фабрика Продукта»
@@ -37,14 +50,14 @@ const FooterNavBar = () => {
       </ul>
       <ul>
         <h2>Мы в социальных сетях</h2>
-        <a href=""><img className="social-network-img" src="../img/vk.png" alt="" /></a>
-        <a href=""><img className="social-network-img" src="../img/youtube.png" alt="" /></a>
-        <a href=""><img className="social-network-img" src="../img/telegram.png" alt="" /></a>
+        <a href=""><img className="social-network-img" src={vk} alt="" /></a>
+        <a href=""><img className="social-network-img" src={youtube} alt="" /></a>
+        <a href=""><img className="social-network-img" src={telegram} alt="" /></a>
       </ul>
       <ul>
         <h2>Принимаем к оплате</h2>
-        <img className="payment-img" src="../img/mastercard.png" alt="" />
-        <img className="payment-img" src="../img/visa.png" alt="" />
+        <img className="payment-img" src={mastercard} alt="" />
+        <img className="payment-img" src={visa} alt="" />
       </ul>
     </div>
   )

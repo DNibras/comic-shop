@@ -1,0 +1,42 @@
+.login-profile {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: center;
+  height         : 100vh;
+}
+
+.entrance {
+  background-color: var(--primary-color);
+  display         : grid;
+  gap             : 1.25em;
+  width           : 18.8em;
+  height          : 21.9em;
+  padding         : 0.9em;
+  text-align      : center;
+
+
+}
+
+.main-input {
+  text-align: center;
+}
+
+.login {
+  background-color: var(--button-color);
+  color           : aliceblue;
+  border          : none;
+  outline         : none;
+  box-shadow      : 0 3px var(--button-shadow-color);
+}
+
+.login:active {
+  box-shadow: 0 0 var(--button-shadow-color);
+  transform : translateY(3px);
+}
+
+.login-profile a {
+  text-decoration: none;
+  font-weight    : 700;
+  color          : var(--text-color);
+}

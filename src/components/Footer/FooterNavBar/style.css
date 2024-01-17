@@ -1,0 +1,48 @@
+.inform {
+  background-color: var(--secondary-color);
+  color           : var(--text-color);
+  padding         : 20px;
+  display         : flex;
+  flex-direction  : row;
+  text-align      : start;
+}
+
+.inform ul {
+  list-style-type: none;
+  flex-grow      : 1;
+  margin-right   : 2em;
+  padding        : 0;
+}
+
+.inform h2 {
+  margin-bottom: 1em;
+  white-space  : nowrap;
+  overflow     : hidden;
+}
+
+.inform li {
+  margin-bottom: 0.4em;
+}
+
+.inform p {
+  padding: 0;
+  margin : 0;
+}
+
+.inform a {
+  color          : var(--text-color);
+  text-decoration: none;
+}
+
+.inform a:hover {
+  text-decoration: underline;
+}
+
+.social-network-img {
+  height      : 2em;
+  margin-right: 1em;
+}
+
+.payment-img {
+  height: 4em;
+}

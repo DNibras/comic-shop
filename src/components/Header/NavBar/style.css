@@ -1,4 +1,45 @@
 .header-nav-bar {
-  display: flex;
+  float      : right;
+  height     : 100%;
+}
+
+.nav-bar-list {
+  display       : flex;
   flex-direction: row;
+  list-style-type: none;
+  margin         : 0;
+  padding        : 0;
+  height         : 100%;
+}
+
+.nav-bar-list li {
+  height: 100%;
+  margin-left: 1em;
+}
+
+.nav-bar-list a {
+  color          : var(--text-color);
+  display        : flex;
+  flex-direction : column;
+  box-sizing     : border-box;
+  text-decoration: none;
+  align-items    : center;
+  justify-content: center;
+  height         : 100%;
+  padding        : 0 0.8em;
+  margin         : 0;
+}
+
+.link-text {
+  text-align: center;
+}
+
+.nav-bar-list a:active {
+  background-color: var(--secondary-color);
+  box-shadow      : 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.icon-header {
+  width : 2em;
+  height: 2em;
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 const ProductList = () => {
   const [products, setProducts] = useState<ProductModel[]>([]);
@@ -9,10 +10,12 @@ const ProductList = () => {
   .then(data => setProducts(data));
 
   return (
-    <div className="product">
+    <div className="product-list-container">
       {products.map(product => (
-        <div key={product.id}>
-          <img src={product.img} alt="Товар 1" />
+        <div className="product" key={product.id}>
+          <div className="product-img-box">
+            <img src={product.img} alt="Товар 1" />
+          </div>
           <h4>{product.title}</h4>
           <p>{product.price}</p>
           <button className="add-basket"><Link to={`/product/${product.id}`}>Добавить в корзину</Link></button>

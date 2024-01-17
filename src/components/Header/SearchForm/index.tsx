@@ -1,5 +1,6 @@
 import { useState } from "react";
-import './style.css'
+import './style.css';
+import loupe from '../images/loupe.png';
 
 const Search = () => {
   const [isActive, setIsActive] = useState(false);
@@ -23,10 +24,10 @@ const Search = () => {
             onBlur={onSearchInputBlur}
             />
           <button className="submit-button">
-            <img className="loupe" src="../img/loupe.png" alt="" />
+            <img className="loupe" src={loupe} alt="" />
           </button>
         </div>
-        <div className={isActive ? 'search-options-container' : 'search-options-container__enabled'}>
+        <div className={isActive ? 'search-options-container__enabled' : 'search-options-container'}>
           <h4>История: </h4>
           <ul className="search-options">
             <li>Черепашки ниндзя</li>

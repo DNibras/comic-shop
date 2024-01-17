@@ -1,13 +1,12 @@
 import ProductList from "../ProductList"
+import './style.css'
 
 const Products = () => {
   
   return (
-    <section className="product-list">
+    <section className="products">
       <h3>Рекомендуемые товары</h3>
-      <div className="product-list-container">
-        <ProductList />
-      </div>
+      <ProductList />
     </section>
   )
 }

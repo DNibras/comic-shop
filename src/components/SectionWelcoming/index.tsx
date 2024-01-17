@@ -1,3 +1,11 @@
+import './style.css';
+import dc from './images/dc.png';
+import marvel from './images/marvel.jpg';
+import bubble from './images/bubble.png';
+import idwPublishing from './images/idwPublishing.png';
+import imageComics from './images/imageComics.png';
+import mirageStudios from './images/mirageStudios.png';
+import darkHorse from './images/darkHorse.png';
 
 const SectionWelcoming = () => {
 
@@ -5,15 +13,15 @@ const SectionWelcoming = () => {
     <section className="welcoming">
       <h2>Добро пожаловать в First Page</h2>
       <p>Откройте для себя лучшие товары мира комиксов</p>
-      <div className="brands">
-        <a href="#" className="brands-nav"><img className="brands-img" src="../img/dc.png" alt="" /></a>
-        <a href="#" className="brands-nav"><img className="brands-img" src="../img/marvel.jpg" alt="" /></a>
-        <a href="#" className="brands-nav"><img className="brands-img" src="../img/bubble.png" alt="" /></a>
-        <a href="#" className="brands-nav"><img className="brands-img" src="../img/idw-publishing.png" alt="" /></a>
-        <a href="#" className="brands-nav"><img className="brands-img" src="../img/image-comics.png" alt="" /></a>
-        <a href="#" className="brands-nav"><img className="brands-img" src="../img/mirage-studios.png" alt="" /></a>
-        <a href="#" className="brands-nav"><img className="brands-img" src="../img/dark-horse.png" alt="" /></a>
-      </div>
+      <nav className="brands">
+        <a href="#" className="link-brands"><img className="brands-img" src={dc} alt="" /></a>
+        <a href="#" className="link-brands"><img className="brands-img" src={marvel} alt="" /></a>
+        <a href="#" className="link-brands"><img className="brands-img" src={bubble} alt="" /></a>
+        <a href="#" className="link-brands"><img className="brands-img" src={idwPublishing} alt="" /></a>
+        <a href="#" className="link-brands"><img className="brands-img" src={imageComics} alt="" /></a>
+        <a href="#" className="link-brands"><img className="brands-img" src={mirageStudios} alt="" /></a>
+        <a href="#" className="link-brands"><img className="brands-img" src={darkHorse} alt="" /></a>
+      </nav>
     </section>
   )
 }

@@ -1,4 +1,5 @@
 import FooterNavBar from "./FooterNavBar"
+import './style.css'
 
 const Footer = () => {
 
