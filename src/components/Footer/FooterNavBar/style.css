@@ -1,5 +1,5 @@
 .inform {
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
   color           : var(--text-color);
   padding         : 20px;
   display         : flex;
@@ -45,4 +45,24 @@
 
 .payment-img {
   height: 4em;
+}
+
+@media (max-width: 1200px) {
+  .payment {
+    display: none;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .inform {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .inform {
+    flex-direction: column;
+  }
 }

@@ -27,7 +27,7 @@ const FooterNavBar = () => {
           </p>
         </li>
         <li>
-          ООО «Фабрика Продукта»
+          ООО «Фабрика Продукта» <br />
           г. Москва, ул. Безымянная д. 1
         </li>
       </ul>
@@ -54,7 +54,7 @@ const FooterNavBar = () => {
         <a href=""><img className="social-network-img" src={youtube} alt="" /></a>
         <a href=""><img className="social-network-img" src={telegram} alt="" /></a>
       </ul>
-      <ul>
+      <ul className="payment">
         <h2>Принимаем к оплате</h2>
         <img className="payment-img" src={mastercard} alt="" />
         <img className="payment-img" src={visa} alt="" />

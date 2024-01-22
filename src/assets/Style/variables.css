@@ -1,7 +1,9 @@
 :root {
-  --primary-color  : #ffffff;
-  --secondary-color: #f2f2f2;
-  --accent-color   : #000000;
-  --text-color     : #000000;
+  --primary-color  : hsl(0, 0%, 100%);
+  --secondary-color: hsl(0, 0%, 0%);
+  --accent-color   : hsl(0, 0%, 90%);
+  --text-color     : hsl(0, 0%, 0%);
+  --button-color   : hsl(23, 91%, 44%);
+  --button-shadow-color  : hsl(23, 91%, 34%);
   -moz-background-muter-index: 999;
 }

@@ -1,8 +1,9 @@
 import './style.css'
-import orders from '../images/orders.png'
+import catalog from '../images/catalog.png'
 import basket from '../images/basket.png'
 import favorites from '../images/favorites.png'
 import account from '../images/account.png'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
 
@@ -11,8 +12,8 @@ const NavBar = () => {
       <ul className="nav-bar-list">
         <li>
           <a href="#">
-            <img className="icon-header" src={orders} alt="" />
-            <div className="link-text">Заказы</div>
+            <img className="icon-header" src={catalog} alt="" />
+            <div className="link-text">Каталог</div>
           </a>
         </li>
         <li>
@@ -28,10 +29,10 @@ const NavBar = () => {
           </a>
         </li>
         <li>
-          <a href="#">
+          <Link to={`/login`}>
             <img className="icon-header" src={account} alt="" />
             <div className="link-text">Войти</div>
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

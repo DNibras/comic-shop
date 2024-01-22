@@ -1,21 +1,21 @@
 .search-container {
-  background-color: white;
-  width           : max-content;
+  background-color: var(--primary-color);
+  width           : 50%;
   padding         : 0.5em;
   margin          : 0 auto;
   z-index         : calc(var(--background-muter-index) + 1);
 }
 
 .search-container:has(.search-options-container__enabled) {
-  outline      : 2px solid black;
+  outline      : 2px solid hsl(0, 0%, 0%);
   border-radius: 0.5em;
 }
 
 .search-options-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
+  display   : none;
+  position  : absolute;
+  top       : 100%;
+  left      : 0;
   margin-top: 0.5em;
 }
 
@@ -30,13 +30,14 @@
 .search-box {
   display      : flex;
   text-align   : center;
-  border-radius: 20px;
+  border-radius: 5px;
   overflow     : hidden;
 }
 
 .search-products {
-  background-color: var(--secondary-color);
-  width           : 300px;
+  background-color: var(--accent-color);
+  width           : 100%;
+  height          : 3em;
   border          : none;
   outline         : none;
   text-align      : center;
@@ -45,11 +46,11 @@
 .submit-button {
   border          : none;
   margin          : 0;
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 
 .loupe {
-  height: 20px;
+  height: 1.25em;
 }
 
 .search-options-container {

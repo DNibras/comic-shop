@@ -5,7 +5,7 @@ import loupe from '../images/loupe.png';
 const Search = () => {
   const [isActive, setIsActive] = useState(false);
 
-  const onSearchInput = () => {
+  const onSearchInputFocus = () => {
     setIsActive(!isActive);
   }
 
@@ -17,15 +17,17 @@ const Search = () => {
     <div className="search-container">
       <form action="" className="search-form">
         <div className="search-box">
-          <input
-            type="text"
-            className="search-products"
-            onFocus={onSearchInput}
-            onBlur={onSearchInputBlur}
-            />
           <button className="submit-button">
             <img className="loupe" src={loupe} alt="" />
           </button>
+          <input
+            type="text"
+            className="search-products"
+            placeholder="Поиск..."
+            onFocus={onSearchInputFocus}
+            onBlur={onSearchInputBlur}
+          />
+          
         </div>
         <div className={isActive ? 'search-options-container__enabled' : 'search-options-container'}>
           <h4>История: </h4>

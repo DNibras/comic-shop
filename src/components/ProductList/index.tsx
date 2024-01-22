@@ -17,8 +17,8 @@ const ProductList = () => {
             <img src={product.img} alt="Товар 1" />
           </div>
           <h4>{product.title}</h4>
-          <p>{product.price}</p>
-          <button className="add-basket"><Link to={`/product/${product.id}`}>Добавить в корзину</Link></button>
+          <p>{product.price}р.</p>
+          <button className="add-basket"><Link to={`/product/${product.id}`} className="link">Добавить в корзину</Link></button>
         </div>
       ))}
     </div>
