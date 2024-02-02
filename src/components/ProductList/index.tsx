@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
 const ProductList = () => {
   const [products, setProducts] = useState<ProductModel[]>([]);
 
-  fetch('https://fakestoreapi.com/products')
-  .then((res) => res.json() as Promise<ProductModel[]>)
-  .then(data => setProducts(data));
+  useEffect(() => {
+    fetch('https://fakestoreapi.com/products')
+      .then((res) => res.json() as Promise<ProductModel[]>)
+      .then(data => setProducts(data))
+  }, []);
 
   return (
     <div className="product-list-container">

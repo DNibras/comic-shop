@@ -22,12 +22,11 @@ const Search = () => {
           </button>
           <input
             type="text"
-            className="search-products"
+            className="search-input"
             placeholder="Поиск..."
             onFocus={onSearchInputFocus}
             onBlur={onSearchInputBlur}
           />
-          
         </div>
         <div className={isActive ? 'search-options-container__enabled' : 'search-options-container'}>
           <h4>История: </h4>

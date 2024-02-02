@@ -14,10 +14,6 @@
 
 .search-options-container {
   display   : none;
-  position  : absolute;
-  top       : 100%;
-  left      : 0;
-  margin-top: 0.5em;
 }
 
 .search-options-container h4 {
@@ -26,7 +22,6 @@
 
 .search-options-container__enabled {
   display: block;
-  box-sizing: border-box;
 }
 
 .search-form {
@@ -40,7 +35,7 @@
   overflow     : hidden;
 }
 
-.search-products {
+.search-input {
   background-color: var(--accent-color);
   width           : 100%;
   height          : 3em;
@@ -57,10 +52,6 @@
 
 .loupe {
   height: 1.25em;
-}
-
-.search-options-container {
-  display: none;
 }
 
 .search-options {

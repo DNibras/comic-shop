@@ -1,5 +1,3 @@
-@import "../../assets/style/variables.css";
-
 header {
   background-color: var(--primary-color);
   color           : var(--text-color);
