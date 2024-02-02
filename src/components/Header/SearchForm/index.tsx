@@ -1,6 +1,6 @@
 import { useState } from "react";
 import './style.css';
-import loupe from '../images/loupe.png';
+import loupe from '../../../assets/images/loupe.png';
 
 const Search = () => {
   const [isActive, setIsActive] = useState(false);

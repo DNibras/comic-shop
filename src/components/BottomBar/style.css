@@ -1,0 +1,52 @@
+.bottom-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .bottom-bar {
+    background-color: var(--primary-color);
+    display         : block;
+    position        : fixed;
+    bottom          : 0;
+    width           : 100%;
+  }
+
+  .bottom-bar-list {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin         : 0;
+    padding        : 0;
+    width          : 100%;
+    height         : 100%;
+  }
+
+  .bottom-bar-list li {
+    height     : 100%;
+  }
+
+  .bottom-bar-link {
+    color          : var(--text-color);
+    display        : flex;
+    flex-direction : column;
+    box-sizing     : border-box;
+    text-decoration: none;
+    align-items    : center;
+    justify-content: center;
+    height         : 100%;
+    padding        : 1em;
+    margin         : 0;
+  }
+
+  .icon-bottom-bar {
+    width : 2em;
+    height: 2em;
+    display: inline;
+  }
+
+  .bottom-bar-link:active .icon-bottom-bar, .bottom-bar-link:active .bottom-bar-text{
+    opacity: 0.5;
+  }
+
+}

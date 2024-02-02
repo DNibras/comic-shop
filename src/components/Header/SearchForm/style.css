@@ -9,6 +9,7 @@
 .search-container:has(.search-options-container__enabled) {
   outline      : 2px solid hsl(0, 0%, 0%);
   border-radius: 0.5em;
+  margin-top: 12.7em;
 }
 
 .search-options-container {
@@ -19,8 +20,13 @@
   margin-top: 0.5em;
 }
 
+.search-options-container h4 {
+  margin-top: 0.5em;
+}
+
 .search-options-container__enabled {
   display: block;
+  box-sizing: border-box;
 }
 
 .search-form {
@@ -59,4 +65,13 @@
 
 .search-options {
   list-style-type: none;
+  padding-left: 0;
+}
+
+.search-options li {
+  margin-bottom: 0.5em;
+}
+
+.search-options li:hover {
+  text-decoration: underline;
 }

@@ -1,5 +1,11 @@
 .products {
-  padding         : 50px;
+  padding         : 1em;
   background-color: var(--primary-color);
   color           : var(--text-color);
+}
+
+.products h2 {
+  margin-top: 0;
+  margin-bottom: 3em;
+  font-size    : 2em;
 }

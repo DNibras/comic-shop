@@ -1,5 +1,7 @@
 .carousel {
-  position: relative;
+  position      : relative;
+  display       : block;
+  padding-bottom: 1em;
 }
 
 .carousel-container {
@@ -40,9 +42,16 @@
 .carousel-item-button {
   margin          : 2em 3.5em;
   padding         : 0.6em;
-  border-radius   : 2em;
   background-color: var(--button-color);
-  border-color    : var(--button-shadow-color);
+  color           : var(--primary-color);
+  border          : none;
+  outline         : none;
+  box-shadow      : 0 3px var(--button-shadow-color);
+}
+
+.carousel-item-button:active {
+  box-shadow: 0 0 var(--button-shadow-color);
+  transform : translateY(3px);
 }
 
 .carousel-item:hover .carousel-item-info {

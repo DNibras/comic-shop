@@ -13,12 +13,13 @@ const ProductList = () => {
     <div className="product-list-container">
       {products.map(product => (
         <div className="product" key={product.id}>
+          <Link to={`/product/${product.id}`} className="add-wishlist-link"><div className="add-wishlist">&#x2764;</div></Link>
           <div className="product-img-box">
             <img src={product.img} alt="Товар 1" />
           </div>
           <h4>{product.title}</h4>
           <p>{product.price}р.</p>
-          <button className="add-basket"><Link to={`/product/${product.id}`} className="link">Добавить в корзину</Link></button>
+          <Link to={`/product/${product.id}`} className="add-basket-link"><button className="add-basket">Добавить в корзину</button></Link>
         </div>
       ))}
     </div>

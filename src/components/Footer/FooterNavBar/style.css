@@ -40,7 +40,13 @@
 
 .social-network-img {
   height      : 2em;
-  margin-right: 1em;
+  margin: 0.5em 1em 0 0;
+  transition: transform 0.3s;
+}
+
+.social-network-img:hover {
+  transform: scale(1.4);
+
 }
 
 .payment-img {
@@ -64,5 +70,10 @@
 @media (max-width: 767px) {
   .inform {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .social-network-img {
+    margin-bottom: 1em;
   }
 }

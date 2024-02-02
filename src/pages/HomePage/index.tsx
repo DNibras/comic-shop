@@ -1,6 +1,7 @@
 import Carousel from "../../components/Carousel"
-import Products from "../../components/ProductList"
+import Products from "../../components/Products"
 import SectionWelcoming from "../../components/SectionWelcoming"
+import './style.css'
 
 function HomePage() {
 

@@ -6,6 +6,7 @@
 .nav-bar-list {
   display       : flex;
   flex-direction: row;
+  justify-content: space-between;
   list-style-type: none;
   margin         : 0;
   padding        : 0;
@@ -14,10 +15,9 @@
 
 .nav-bar-list li {
   height: 100%;
-  margin-left: 1em;
 }
 
-.nav-bar-list a {
+.header-nav-bar-link {
   color          : var(--text-color);
   display        : flex;
   flex-direction : column;
@@ -26,7 +26,7 @@
   align-items    : center;
   justify-content: center;
   height         : 100%;
-  padding        : 0 0.8em;
+  padding        : 0 0.4em;
   margin         : 0;
 }
 
@@ -42,4 +42,10 @@
 .icon-header {
   width : 2em;
   height: 2em;
+}
+
+@media (max-width: 768px) {
+  .header-nav-bar {
+    display: none;
+  }
 }

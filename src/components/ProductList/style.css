@@ -1,17 +1,17 @@
 .product-list-container {
   display              : grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap             : 20px;
+  grid-gap             : 0.5em;
 }
 
 .product {
-  margin          : 20px;
-  width           : fit-content;
   background-color: var(--accent-color);
   color           : var(--text-color);
   padding         : 2em;
-  margin          : 0 1.5em 1.5em 0;
   border-radius   : 1em;
+  display         : flex;
+  flex-direction  : column;
+  align-items     : center;
 }
 
 .product-img-box img {
@@ -20,16 +20,36 @@
 
 .add-basket {
   background-color: var(--button-color);
+  color           : var(--primary-color);
+  box-shadow      : 0 3px var(--button-shadow-color);
   padding         : 0.6em;
-  border-radius   : 2em;
-  border-color    : var(--button-shadow-color);
-}
-
-.link {
-  text-decoration: none;
-  color          : var(--text-color);
+  border          : none;
+  outline         : none;
+  margin-top      : auto;
+  width           : fit-content;
 }
 
 .add-basket:active {
-  background-color: var(--button-shadow-color);
+  box-shadow: 0 0 var(--button-shadow-color);
+  transform : translateY(3px);
+}
+
+.add-wishlist {
+  color           : var(--accent-color);
+  background-color: var(--primary-color);
+  border          : 1px solid var(--secondary-color);
+  border-radius   : 50%;
+  font-size       : 1em;
+  padding         : 0.3em 0.6em;
+}
+
+.add-wishlist-link {
+  text-decoration: none;
+  display        : block;
+  display        : flex;
+  flex-wrap      : end;
+}
+
+.add-wishlist:active {
+  color: red;
 }

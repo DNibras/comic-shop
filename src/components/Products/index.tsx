@@ -5,7 +5,7 @@ const Products = () => {
   
   return (
     <section className="products">
-      <h3>Рекомендуемые товары</h3>
+      <h2>Рекомендуемые товары</h2>
       <ProductList />
     </section>
   )
