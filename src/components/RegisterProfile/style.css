@@ -1,11 +1,14 @@
 .register-profile-container {
-  display        : flex;
-  flex-direction : column;
-  align-items    : center;
   margin-bottom: 3em;
 }
 
-.register-profile-container input{
+.register-profile-form {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+}
+
+.register-profile-form div {
   margin-bottom: 1em;
 }
 
@@ -34,13 +37,24 @@
   flex-direction: column;
 }
 
-.register-profile-container label {
+.gender-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.register-profile-form label {
   opacity: 0.8;
 }
 
-.register-profile-container input {
+.register-input {
   width: 20em;
   padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.agree-input {
+  transform: scale(1.5);
+  margin-right: 1em;
 }
 
 .register-button {
