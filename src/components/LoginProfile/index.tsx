@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './style.css';
 
 const LoginProfile = () => {
@@ -22,6 +23,7 @@ const LoginProfile = () => {
             />
             <button className="login">Войти</button>
             <a href="">Забыли пароль?</a>
+            <Link to={'/registration'}>Регистрация</Link>
         </section>
       </form>
     </section>
