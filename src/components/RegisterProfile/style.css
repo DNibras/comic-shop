@@ -1,0 +1,56 @@
+.register-profile-container {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  margin-bottom: 3em;
+}
+
+.register-profile-container input{
+  margin-bottom: 1em;
+}
+
+.email-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.password-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.fullName-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.birthday-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-profile-container label {
+  opacity: 0.8;
+}
+
+.register-profile-container input {
+  width: 20em;
+  padding: 0.5em;
+}
+
+.register-button {
+  background-color: var(--button-color);
+  color           : var(--primary-color);
+  box-shadow      : 0 3px var(--button-shadow-color);
+  padding         : 0.6em;
+  border          : none;
+  outline         : none;
+  margin-top      : auto;
+  width           : fit-content;
+  margin-top: 2em;
+}
