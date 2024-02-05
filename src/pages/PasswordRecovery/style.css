@@ -1,0 +1,27 @@
+.password-recovery {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+  margin-bottom: 2em;
+}
+
+.password-recovery-form {
+  display       : flex;
+  flex-direction: column;
+}
+
+.recovery-input {
+  text-align: center;
+  padding: 0.4em;
+  margin    : 1em 0;
+}
+
+.recovery-button {
+  background-color: var(--button-color);
+  color           : var(--primary-color);
+  box-shadow      : 0 3px var(--button-shadow-color);
+  padding         : 0.6em;
+  border          : none;
+  outline         : none;
+  margin-top      : auto;
+}
