@@ -22,7 +22,7 @@ const LoginProfile = () => {
               placeholder="Пароль"
             />
             <button className="login">Войти</button>
-            <a href="">Забыли пароль?</a>
+            <Link to={'/password-recovery'}>Забыли пароль?</Link>
             <Link to={'/registration'}>Регистрация</Link>
         </section>
       </form>
