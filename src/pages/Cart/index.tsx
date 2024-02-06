@@ -26,9 +26,9 @@ const Cart = () => {
     setCart(cart.filter(item => item.id !== id));
   };
 
-  const increaseQuantity = (id: number) => {
+  const decreaseQuantity = (id: number) => {
     setCart(cart.map(item =>
-      item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+      item.id === id ? { ...item, quantity: item.quantity - 1 } : item
     ));
   };
 
@@ -38,7 +38,8 @@ const Cart = () => {
         <div key={comic.id}>
           <span>{comic.title} - {comic.price}Руб. - Количество: {comic.quantity}</span>
           <button onClick={() => removeFromCart(comic.id)}>&#8722;</button>
-          <button onClick={() => increaseQuantity(comic.id)}>&#43;</button>
+          <button onClick={() => decreaseQuantity(comic.id)}>&#8722;</button>
+          <button onClick={() => addToCart(comic)}>&#43;</button>
         </div>
       ))}
     </div>
