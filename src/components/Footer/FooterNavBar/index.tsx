@@ -23,7 +23,7 @@ const FooterNavBar = () => {
           <p>
             Электронная почта:
             <br />
-            <a href="">office@FirstPage.ru</a>
+            <a href="mailto:officre@FirstPage.ru">office@FirstPage.ru</a>
           </p>
         </li>
         <li>
@@ -50,9 +50,9 @@ const FooterNavBar = () => {
       </ul>
       <ul>
         <h2>Мы в социальных сетях</h2>
-        <a href=""><img className="social-network-img" src={vk} alt="" /></a>
-        <a href=""><img className="social-network-img" src={youtube} alt="" /></a>
-        <a href=""><img className="social-network-img" src={telegram} alt="" /></a>
+        <a href="https://m.vk.com/"><img className="social-network-img" src={vk} alt="" /></a>
+        <a href="https://www.youtube.com/"><img className="social-network-img" src={youtube} alt="" /></a>
+        <a href="https://web.telegram.org/"><img className="social-network-img" src={telegram} alt="" /></a>
       </ul>
       <ul className="payment">
         <h2>Принимаем к оплате</h2>
