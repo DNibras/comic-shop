@@ -4,6 +4,7 @@ import youtube from './images/youtube.png';
 import telegram from './images/telegram.png';
 import mastercard from './images/mastercard.png';
 import visa from './images/visa.png';
+import { Link } from 'react-router-dom';
 
 
 const FooterNavBar = () => {
@@ -33,20 +34,20 @@ const FooterNavBar = () => {
       </ul>
       <ul>
         <h2>О компании</h2>
-        <li><a href="">Информация</a></li>
-        <li><a href="">Карьера</a></li>
-        <li><a href="">Партнерка</a></li>
-        <li><a href="">Адреса магазинов</a></li>
-        <li><a href="">Блог</a></li>
-        <li><a href="">Контакты</a></li>
+        <li><Link to={'/about'}>Информация</Link></li>
+        <li><Link to={'/career'}>Карьера</Link></li>
+        <li><Link to={'/partners'}>Партнерка</Link></li>
+        <li><Link to={'/address'}>Адреса магазинов</Link></li>
+        <li><Link to={'/blog'}>Блог</Link></li>
+        <li><Link to={'/contacts'}>Контакты</Link></li>
       </ul>
       <ul>
         <h2>Покупателям</h2>
-        <li><a href="">Оплата</a></li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Акции</a></li>
-        <li><a href="">Скидки</a></li>
-        <li><a href="">Пользовательское соглашение</a></li>
+        <li><Link to={'/payment'}>Оплата</Link></li>
+        <li><Link to={'/delivery'}>Доставка</Link></li>
+        <li><Link to={'/promotions'}>Акции</Link></li>
+        <li><Link to={'/discounts'}>Скидки</Link></li>
+        <li><Link to={'/agreement'}>Пользовательское соглашение</Link></li>
       </ul>
       <ul>
         <h2>Мы в социальных сетях</h2>
