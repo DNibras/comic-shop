@@ -34,7 +34,7 @@ const FooterNavBar = () => {
       </ul>
       <ul>
         <h2>О компании</h2>
-        <li><Link to={'/about'}>Информация</Link></li>
+        <li><Link to={'/information'}>Информация</Link></li>
         <li><Link to={'/career'}>Карьера</Link></li>
         <li><Link to={'/partners'}>Партнерка</Link></li>
         <li><Link to={'/address'}>Адреса магазинов</Link></li>

@@ -9,6 +9,7 @@ import Catalog from './pages/Catalog'
 import Cart from './pages/Cart'
 import RegisterProfile from './components/RegisterProfile'
 import PasswordRecovery from './pages/PasswordRecovery'
+import Information from './pages/Information'
 // import Wishlist from './pages/Wishlist'
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/cart' element={<Cart />} />
         <Route path='/registration' element={<RegisterProfile />} />
         <Route path='/password-recovery' element={<PasswordRecovery />} />
+        <Route path='/information' element={<Information />} />
         {/* <Route path='/Wishlist' element={<Wishlist />} /> */}
       </Routes>
       <BottomBar />
