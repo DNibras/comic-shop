@@ -12,7 +12,7 @@ interface WishlistProps {
   onRemoveFromWishlist: (id: number) => void;
 }
 
-const Wishlist: React.FC<WishlistProps> = ({ wishlist, onRemoveFromWishlist }) => {
+const WishlistPage: React.FC<WishlistProps> = ({ wishlist, onRemoveFromWishlist }) => {
   const handleBuy = (title: string) => {
     console.log(`Купить ${title}`);
   };
@@ -33,4 +33,4 @@ const Wishlist: React.FC<WishlistProps> = ({ wishlist, onRemoveFromWishlist }) =
   );
 };
 
-export default Wishlist;
+export default WishlistPage;

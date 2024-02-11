@@ -1,8 +1,8 @@
-import "./style.css"
 import shop1 from './images/shop1.jpg';
 import shop2 from './images/shop2.jpg';
+import "./style.css";
 
-const Information = () => {
+const InformationPage = () => {
   return (
     <div className="information">
       <h1>История создания</h1>
@@ -28,4 +28,4 @@ const Information = () => {
   )
 }
 
-export default Information
+export default InformationPage

@@ -1,6 +1,6 @@
 import "./style.css"
 
-const PasswordRecovery = () => {
+const PasswordRecoveryPage = () => {
   return (
     <div className="password-recovery">
       <h1>Восстановить пароль</h1>
@@ -13,4 +13,4 @@ const PasswordRecovery = () => {
   )
 }
 
-export default PasswordRecovery
+export default PasswordRecoveryPage

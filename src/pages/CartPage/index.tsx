@@ -8,7 +8,7 @@ interface Comic {
   quantity: number;
 }
 
-const Cart = () => {
+const CartPage = () => {
   const [cart, setCart] = useState<Comic[]>([]);
 
   const addToCart = (comic: Comic) => {
@@ -46,4 +46,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default CartPage;

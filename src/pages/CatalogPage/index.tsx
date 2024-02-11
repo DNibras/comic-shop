@@ -1,5 +1,4 @@
-import { useEffect, useState  } from "react";
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react";
 import './style.css';
 
 interface Genre {
@@ -7,7 +6,7 @@ interface Genre {
   name: string;
 }
 
-const Catalog = () => {
+const CatalogPage = () => {
   const [genres, setGenres] = useState<Genre[]>([]);
   const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
 
@@ -58,4 +57,4 @@ const Catalog = () => {
   );
 }
 
-export default Catalog
+export default CatalogPage
