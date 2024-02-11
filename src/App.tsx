@@ -1,15 +1,17 @@
-import Header from './components/Header'
-import './App.css'
-import HomePage from './pages/HomePage'
 import { Route, Routes } from 'react-router-dom'
-import Footer from './components/Footer'
-import LoginProfile from './components/LoginProfile'
+import './App.css'
 import BottomBar from './components/BottomBar'
-import Catalog from './pages/Catalog'
-import Cart from './pages/Cart'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import LoginProfile from './components/LoginProfile'
 import RegisterProfile from './components/RegisterProfile'
-import PasswordRecovery from './pages/PasswordRecovery'
-import Information from './pages/Information'
+import CareerPage from './pages/CareerPage'
+import CartPage from './pages/CartPage'
+import CatalogPage from './pages/CatalogPage'
+import HomePage from './pages/HomePage'
+import InformationPage from './pages/InformationPage'
+import PasswordRecoveryPage from './pages/PasswordRecoveryPage'
+
 // import Wishlist from './pages/Wishlist'
 
 
@@ -22,11 +24,12 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/login' element={<LoginProfile />} />
-        <Route path='/catalog' element={<Catalog />} />
-        <Route path='/cart' element={<Cart />} />
+        <Route path='/catalog' element={<CatalogPage />} />
+        <Route path='/cart' element={<CartPage />} />
         <Route path='/registration' element={<RegisterProfile />} />
-        <Route path='/password-recovery' element={<PasswordRecovery />} />
-        <Route path='/information' element={<Information />} />
+        <Route path='/password-recovery' element={<PasswordRecoveryPage />} />
+        <Route path='/information' element={<InformationPage />} />
+        <Route path='/career' element={<CareerPage />} />
         {/* <Route path='/Wishlist' element={<Wishlist />} /> */}
       </Routes>
       <BottomBar />

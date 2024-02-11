@@ -1,0 +1,109 @@
+.career {
+  display       : flex;
+  flex-direction: column;
+  margin        : 1em 2em;
+}
+
+.container-career {
+  padding: 1em 2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.career-information {
+  display              : grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.career-information-container {
+  display       : flex;
+  flex-direction: column;
+  order         : 1;
+}
+
+.career-text {
+  text-align: left;
+  margin-top: 0;
+}
+
+.contact-vacancy {
+  display       : flex;
+  flex-direction: column;
+  text-align    : left;
+}
+
+.link-vacancy {
+  text-decoration: none;
+  color          : var(--text-color);
+}
+
+.link-vacancy:hover {
+  text-decoration: underline;
+  text-align     : end;
+}
+
+.career-list {
+  text-align     : left;
+  list-style-type: circle;
+  margin-top     : 0;
+  margin-bottom  : 1em;
+  padding-left   : 1.5em;
+}
+
+.contact-vacancy {
+  list-style-type: none;
+  padding-left   : 0;
+  margin         : 0;
+  white-space    : nowrap;
+  order          : 2;
+}
+
+.contact-vacancy p {
+  margin: 0;
+}
+
+.contact-vacancy li {
+  margin-bottom: 0.5em;
+}
+
+.vacancy-description {
+  color : gray;
+  margin: 0;
+}
+
+.vacancy-list {
+  list-style-type: none;
+  padding        : 0;
+}
+
+.vacancy-list p {
+  margin-top: 0.6em;
+  margin-bottom: 0;
+}
+
+.vacancy {
+  margin-top: 1em;
+  padding: 1em 2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.vacancy ul {
+  margin-bottom: 0.4em;  
+}
+
+.career-list li {
+  margin-top: 0.5em;
+}
+
+.accent {
+  font-weight: bold;
+}
+
+.wage {
+  padding: 1em 0;
+}
+
+@media (max-width: 1200px) {
+  .career-information {
+    grid-template-columns: 1fr;
+  }
+}
