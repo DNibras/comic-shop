@@ -1,0 +1,125 @@
+.partnership * {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.partnership {
+  display       : flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.partnership h1 {
+  margin-bottom: 0.5em;
+}
+
+.partnership h2 {
+  margin-bottom: 0.5em;
+}
+
+.partnership p {
+  margin-bottom: 0.5em;
+}
+
+.information-partnership {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+.container-partnership {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+.mail {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.mail:hover {
+  text-decoration: underline;
+}
+
+.list-design-information {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 0.5em;
+}
+
+.list-design-information h4 {
+  margin-bottom: 0.5em;
+}
+
+.cashback-container {
+  width: 250px;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: rgb(20, 100, 20);
+  padding: 0.5em 1em;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.cashback-container * {
+  color: var(--primary-color);
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.list-information li {
+  margin-bottom: 1em;
+}
+
+.download-requisites {
+  background-color: var(--button-color);
+  color           : var(--primary-color);
+  box-shadow      : 0 3px var(--button-shadow-color);
+  padding         : 0.6em;
+  border          : none;
+  outline         : none;
+  margin-top      : auto;
+}
+
+.list-questions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+}
+
+.list-questions h4 {
+  margin-bottom: 0.5em;
+}
+
+.list-warnings {
+  margin-top: 1em;
+  padding-left: 1.5em;
+}
+
+.list-warnings li {
+  list-style-type: circle;
+  padding-bottom: 0.5em;
+}
+
+@media (max-width: 767px) {
+  .list-design-information {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-design-information li {
+    margin-top: 1em;
+  }
+
+  .list-questions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-questions li {
+    margin-top: 1em;
+  }
+}
