@@ -1,10 +1,10 @@
-import './style.css'
+import { Link } from 'react-router-dom';
+import mastercard from './images/mastercard.png';
+import telegram from './images/telegram.png';
+import visa from './images/visa.png';
 import vk from './images/vk.png';
 import youtube from './images/youtube.png';
-import telegram from './images/telegram.png';
-import mastercard from './images/mastercard.png';
-import visa from './images/visa.png';
-import { Link } from 'react-router-dom';
+import './style.css';
 
 
 const FooterNavBar = () => {
@@ -36,8 +36,8 @@ const FooterNavBar = () => {
         <h2>О компании</h2>
         <li><Link to={'/information'}>Информация</Link></li>
         <li><Link to={'/career'}>Карьера</Link></li>
-        <li><Link to={'/partners'}>Партнерка</Link></li>
-        <li><Link to={'/address'}>Адреса магазинов</Link></li>
+        <li><Link to={'/partnership'}>Партнерка</Link></li>
+        <li><Link to={'/addresses'}>Адреса магазинов</Link></li>
         <li><Link to={'/blog'}>Блог</Link></li>
         <li><Link to={'/contacts'}>Контакты</Link></li>
       </ul>

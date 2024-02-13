@@ -1,0 +1,66 @@
+.store-addresses {
+  display       : flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.store-addresses h1, .store-addresses h2 {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.store-addresses img {
+  width: 70%;
+}
+
+.store-addresses a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.store-addresses a:hover {
+  text-decoration: underline;
+}
+
+.store-addresses-contacts * {
+  margin: 0;
+}
+
+.container {
+  box-shadow   : 0 0 10px rgba(0, 0, 0, 0.5);
+  padding      : 2em;
+  margin-bottom: 2em;
+}
+
+.phone-contact {
+  margin-bottom: 0.5em;
+}
+
+.phone-contact p {
+  margin: 0;
+}
+
+.phone {
+  font-weight: 500;
+}
+
+.description {
+  color: gray;
+}
+
+.store-addresses-contacts {
+  margin: 0.5em 0;
+}
+
+.issuing-orders p {
+  margin-bottom: 1em;
+}
+
+.wholesale-site * {
+  margin: 0;
+}
+
+.wholesale-site {
+  margin-bottom: 0.5em;
+}
