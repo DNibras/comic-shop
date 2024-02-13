@@ -1,0 +1,23 @@
+.delivery {
+  display       : flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.delivery-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 3em;
+  border-top: 1px solid grey;
+  margin-top: 1em;
+}
+
+.accent {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.additional-description {
+  font-size: small;
+  margin-bottom: 0;
+}

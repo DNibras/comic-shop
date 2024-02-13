@@ -8,6 +8,7 @@ import RegisterProfile from './components/RegisterProfile'
 import CareerPage from './pages/CareerPage'
 import CartPage from './pages/CartPage'
 import CatalogPage from './pages/CatalogPage'
+import DeliveryPage from './pages/DeliveryPage'
 import HomePage from './pages/HomePage'
 import InformationPage from './pages/InformationPage'
 import PartnershipPage from './pages/PartnershipPage'
@@ -35,6 +36,7 @@ function App() {
         <Route path='/partnership' element={<PartnershipPage />} />
         <Route path='/addresses' element={<StoreAddressesPage />} />
         <Route path='/payment' element={<PaymentPage />} />
+        <Route path='/delivery' element={<DeliveryPage />} />
         {/* <Route path='/Wishlist' element={<Wishlist />} /> */}
       </Routes>
       <BottomBar />
