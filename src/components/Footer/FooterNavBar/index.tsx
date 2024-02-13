@@ -38,8 +38,7 @@ const FooterNavBar = () => {
         <li><Link to={'/career'}>Карьера</Link></li>
         <li><Link to={'/partnership'}>Партнерка</Link></li>
         <li><Link to={'/addresses'}>Адреса магазинов</Link></li>
-        <li><Link to={'/blog'}>Блог</Link></li>
-        <li><Link to={'/contacts'}>Контакты</Link></li>
+        <li><Link to={'/addresses'}>Контакты</Link></li>
       </ul>
       <ul>
         <h2>Покупателям</h2>
