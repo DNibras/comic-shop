@@ -1,0 +1,38 @@
+.payment {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.payment h2, .payment h3 {
+  margin-bottom: 0;
+}
+
+.payment-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2em;
+}
+
+.payment-list * {
+  margin: 0;
+}
+
+.payment-list h4 {
+  margin-bottom: 0.5em;
+}
+
+.by-bank-card {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid grey;
+}
+
+@media (max-width: 767px) {
+  .payment-list {
+    grid-template-columns: 1fr;
+  }
+}

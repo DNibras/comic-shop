@@ -10,8 +10,10 @@ import CartPage from './pages/CartPage'
 import CatalogPage from './pages/CatalogPage'
 import HomePage from './pages/HomePage'
 import InformationPage from './pages/InformationPage'
+import PartnershipPage from './pages/PartnershipPage'
 import PasswordRecoveryPage from './pages/PasswordRecoveryPage'
-
+import PaymentPage from './pages/PaymentPage'
+import StoreAddressesPage from './pages/StoreAddressesPage'
 // import Wishlist from './pages/Wishlist'
 
 
@@ -30,6 +32,9 @@ function App() {
         <Route path='/password-recovery' element={<PasswordRecoveryPage />} />
         <Route path='/information' element={<InformationPage />} />
         <Route path='/career' element={<CareerPage />} />
+        <Route path='/partnership' element={<PartnershipPage />} />
+        <Route path='/addresses' element={<StoreAddressesPage />} />
+        <Route path='/payment' element={<PaymentPage />} />
         {/* <Route path='/Wishlist' element={<Wishlist />} /> */}
       </Routes>
       <BottomBar />
