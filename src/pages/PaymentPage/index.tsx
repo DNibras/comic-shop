@@ -3,11 +3,11 @@ import './style.css';
 const PaymentPage = () => {
 
   return (
-    <div className="payment">
+    <div className="payment-page">
       <h1>Способ оплаты</h1>
       <h3>Наличными</h3>
       <p>Жители Казани и регионов могут купить наши игры за наличные, то есть без предоплаты! Это можно сделать следующими способами:</p>
-      <ul className='payment-list'>
+      <ul className='payment-page-list'>
         <li>
           <h4>Оплата наличными курьеру</h4>
           <p>Мы доставим Ваш заказ прямо к Вам домой или на работу!</p>

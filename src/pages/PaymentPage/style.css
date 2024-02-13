@@ -1,14 +1,14 @@
-.payment {
+.payment-page {
   display: flex;
   flex-direction: column;
   margin: 1em;
 }
 
-.payment h2, .payment h3 {
+.payment-page h2, .payment-page h3 {
   margin-bottom: 0;
 }
 
-.payment-list {
+.payment-page-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
@@ -17,11 +17,11 @@
   margin-bottom: 2em;
 }
 
-.payment-list * {
+.payment-page-list * {
   margin: 0;
 }
 
-.payment-list h4 {
+.payment-page-list h4 {
   margin-bottom: 0.5em;
 }
 
@@ -32,7 +32,7 @@
 }
 
 @media (max-width: 767px) {
-  .payment-list {
+  .payment-page-list {
     grid-template-columns: 1fr;
   }
 }
