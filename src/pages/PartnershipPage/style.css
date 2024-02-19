@@ -1,13 +1,13 @@
 .partnership * {
-  margin: 0;
-  padding: 0;
+  margin         : 0;
+  padding        : 0;
   list-style-type: none;
 }
 
 .partnership {
   display       : flex;
   flex-direction: column;
-  margin: 1em;
+  margin        : 1em;
 }
 
 .partnership h1 {
@@ -23,21 +23,21 @@
 }
 
 .information-partnership {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 2em;
+  box-shadow   : 0 0 10px rgba(0, 0, 0, 0.5);
+  padding      : 2em;
   margin-bottom: 2em;
 }
 
 .PartnershipPage-container {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 2em;
+  box-shadow   : 0 0 10px rgba(0, 0, 0, 0.5);
+  padding      : 2em;
   margin-bottom: 2em;
 }
 
 .mail {
   text-decoration: none;
-  color: var(--text-color);
-  font-weight: bold;
+  color          : var(--text-color);
+  font-weight    : bold;
 }
 
 .mail:hover {
@@ -45,9 +45,9 @@
 }
 
 .list-design-information {
-  display: grid;
+  display              : grid;
   grid-template-columns: auto auto;
-  grid-column-gap: 0.5em;
+  grid-column-gap      : 0.5em;
 }
 
 .list-design-information h4 {
@@ -55,18 +55,18 @@
 }
 
 .cashback-container {
-  width: 250px;
-  display: grid;
+  width                : 250px;
+  display              : grid;
   grid-template-columns: auto auto;
-  background-color: rgb(20, 100, 20);
-  padding: 0.5em 1em;
-  align-items: center;
-  margin: 1em 0;
+  background-color     : rgb(20, 100, 20);
+  padding              : 0.5em 1em;
+  align-items          : center;
+  margin               : 1em 0;
 }
 
 .cashback-container * {
-  color: var(--primary-color);
-  font-size: 1.3em;
+  color      : var(--primary-color);
+  font-size  : 1.3em;
   font-weight: bold;
 }
 
@@ -90,9 +90,9 @@
 }
 
 .list-questions {
-  display: grid;
+  display              : grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 1em;
+  grid-column-gap      : 1em;
 }
 
 .list-questions h4 {
@@ -100,18 +100,18 @@
 }
 
 .list-warnings {
-  margin-top: 1em;
+  margin-top  : 1em;
   padding-left: 1.5em;
 }
 
 .list-warnings li {
   list-style-type: circle;
-  padding-bottom: 0.5em;
+  padding-bottom : 0.5em;
 }
 
 @media (max-width: 767px) {
   .list-design-information {
-    display: flex;
+    display       : flex;
     flex-direction: column;
   }
 
@@ -120,7 +120,7 @@
   }
 
   .list-questions {
-    display: flex;
+    display       : flex;
     flex-direction: column;
   }
 

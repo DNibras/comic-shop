@@ -1,11 +1,12 @@
 .store-addresses {
   display       : flex;
   flex-direction: column;
-  margin: 1em;
+  margin        : 1em;
 }
 
-.store-addresses h1, .store-addresses h2 {
-  margin: 0;
+.store-addresses h1,
+.store-addresses h2 {
+  margin       : 0;
   margin-bottom: 0.5em;
 }
 
@@ -14,9 +15,9 @@
 }
 
 .store-addresses a {
-  color: var(--text-color);
+  color          : var(--text-color);
   text-decoration: none;
-  font-weight: 500;
+  font-weight    : 500;
 }
 
 .store-addresses a:hover {

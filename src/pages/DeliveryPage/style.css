@@ -1,23 +1,31 @@
-.delivery {
+.DeliveryPage {
   display       : flex;
   flex-direction: column;
-  margin: 1em;
+  margin        : 1em;
 }
 
-.delivery-container {
-  display: grid;
+.DeliveryPage-container {
+  display              : grid;
   grid-template-columns: 3fr 1fr;
-  grid-column-gap: 3em;
-  border-top: 1px solid grey;
-  margin-top: 1em;
+  grid-column-gap      : 3em;
+  border-top           : 1px solid grey;
+  margin-top           : 1em;
 }
 
 .accent {
   font-weight: bold;
-  margin-top: 0;
+  margin-top : 0;
 }
 
 .additional-description {
-  font-size: small;
+  font-size    : small;
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .DeliveryPage-container {
+    display       : flex;
+    flex-direction: column;
+  }
+
 }

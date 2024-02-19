@@ -1,11 +1,11 @@
-.career {
+.CareerPage {
   display       : flex;
   flex-direction: column;
   margin        : 1em 2em;
 }
 
-.container-career {
-  padding: 1em 2em;
+.CareerPage-container {
+  padding   : 1em 2em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -76,18 +76,18 @@
 }
 
 .vacancy-list p {
-  margin-top: 0.6em;
+  margin-top   : 0.6em;
   margin-bottom: 0;
 }
 
-.vacancy {
+.CareerPage-vacancy {
   margin-top: 1em;
-  padding: 1em 2em;
+  padding   : 1em 2em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.vacancy ul {
-  margin-bottom: 0.4em;  
+.CareerPage-vacancy ul {
+  margin-bottom: 0.4em;
 }
 
 .career-list li {

@@ -1,12 +1,12 @@
-.information {
+.InformationPage {
   margin: 2em;
 }
 
-.information-img {
+.InformationPage-img {
   width: 100%;
 }
 
 .shop-img {
-  width: 40%;
+  width      : 40%;
   margin-left: 1em;
 }
