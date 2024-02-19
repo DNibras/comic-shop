@@ -10,7 +10,7 @@ const PartnershipPage = () => {
         <h2>Суть программы</h2>
         <p>Вы приводите нам нового клиента (который ранее не оформлял заказы на нашем сайте) и получаете до 10% от суммы его покупки. Интересно? Тогда читайте дальше, ведь стать нашим партнером очень просто!</p>
       </div>
-      <div className="container-partnership">
+      <div className="PartnershipPage-container">
         <h2>Как оформить партнёрку?</h2>
         <ul className='list-design-information'>
           <li>
@@ -35,7 +35,7 @@ const PartnershipPage = () => {
           </li>
         </ul>
       </div>
-      <div className="container-partnership">
+      <div className="PartnershipPage-container">
         <h2>Что я получу в итоге?</h2>
         <p>Ну а теперь больше информации о том, за что вы будете получать вознаграждение, как его можно потратить, сколько можно заработать и что нужно делать, чтобы заработать еще больше:</p>
         <div className='cashback-container'>
@@ -46,7 +46,7 @@ const PartnershipPage = () => {
         <p>Ссылку можно делать на сам сайт или на конкретную страницу сайта (например, на конкретный товар или на новость, на что угодно), главное, что в конце ссылки должна быть добавлена конструкция с вашим ref_id.</p>
         <p>Общая сумма кэшбэка уменьшается в случае получения клиентом дополнительных скидок (по промоакциям и т.п.). В этом случае — сумма скидки вычитается из кэшбэка. Например, если клиент прочитал на вашем сайте (или на каком-то другом) о промокоде на 5%, то за такого клиента ваш кэшбэк составит разницу (10%-5% = 5%).</p>
       </div>
-      <div className="container-partnership">
+      <div className="PartnershipPage-container">
         <h2>Как вывести деньги?</h2>
         <ul className='list-information'>
           <li>В данный момент есть два способа:</li>
@@ -55,7 +55,7 @@ const PartnershipPage = () => {
         </ul>
         <button className="download-requisites">Скачать реквизиты</button>
       </div>
-      <div className="container-partnership">
+      <div className="PartnershipPage-container">
         <h2>Распространённые вопросы</h2>
         <ul className='list-questions'>
           <li>
@@ -68,7 +68,7 @@ const PartnershipPage = () => {
           </li>
         </ul>
       </div>
-      <div className="container-partnership">
+      <div className="PartnershipPage-container">
         <h2>Чего нельзя делать и что за это будет</h2>
         <ul className='list-warnings'>
           <li>Нельзя создавать фиктивные заказы с целью побыстрее "разлочить" вывод средств.</li>
