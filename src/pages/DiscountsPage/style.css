@@ -1,0 +1,44 @@
+.DiscountsPage {
+  margin: 1em;
+}
+
+.DiscountsPage {
+  display       : flex;
+  flex-direction: column;
+}
+
+.DiscountsPage h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.DiscountsPage-container {
+  margin-bottom: 1em;
+}
+
+.discounts-list {
+  width: 13em;
+  margin: 0;
+  padding: 0;
+}
+
+.discounts-list li {
+  list-style-type: none;
+  display        : grid;
+  grid-template-columns: 3fr 1fr;
+  border-bottom: 1px solid grey;
+  padding-left: 1em;
+}
+
+.attention {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.attention img {
+  width: auto;
+  height: 5em;
+  margin: auto; 
+}
