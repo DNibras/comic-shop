@@ -6,26 +6,30 @@ const ProductList = () => {
   const [products, setProducts] = useState<ProductModel[]>([]);
 
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
+    fetch("https://fakestoreapi.com/products")
       .then((res) => res.json() as Promise<ProductModel[]>)
-      .then(data => setProducts(data))
+      .then((data) => setProducts(data));
   }, []);
 
   return (
-    <div className="product-list-container">
-      {products.map(product => (
+    <div className="ProductList-container">
+      {products.map((product) => (
         <div className="product" key={product.id}>
-          <Link to={`/product/${product.id}`} className="add-wishlist-link"><div className="add-wishlist">&#x2764;</div></Link>
+          <Link to={`/product/${product.id}`} className="add-wishlist-link">
+            <div className="add-wishlist">&#x2764;</div>
+          </Link>
           <div className="product-img-box">
-            <img src={product.img} alt="Товар 1" />
+            <img src={product.img} alt="Товар" />
           </div>
           <h4>{product.title}</h4>
           <p>{product.price}р.</p>
-          <Link to={`/product/${product.id}`} className="add-basket-link"><button className="add-basket">Добавить в корзину</button></Link>
+          <Link to={`/product/${product.id}`} className="add-basket-link">
+            <button className="add-basket">Добавить в корзину</button>
+          </Link>
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default ProductList
+export default ProductList;
