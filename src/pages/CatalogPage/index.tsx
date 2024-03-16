@@ -8,53 +8,23 @@ interface Genre {
 
 const CatalogPage = () => {
   const [genres, setGenres] = useState<Genre[]>([]);
-  const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
 
   useEffect(() => {
-    fetch('https://api.example.com/genres')
-      .then(response => response.json())
-      .then(data => {
-        setGenres(data);
-      })
-      .catch(error => {
-        console.error('Произошла ошибка при получении списка жанров:', error);
-      });
+    fetch('https://fakestoreapi.com/products/categories')
+      .then((res) => res.json() as Promise<string[]>)
+      .then(data => setGenres(data.map((name, index) => ({ id: index, name }))))
   }, []);
 
-  const handleGenreClick = (genreId: string) => {
-    if (selectedGenres.includes(genreId)) {
-      setSelectedGenres(selectedGenres.filter(id => id !== genreId)); // Удаление жанра из выбранных, если он уже выбран
-    } else {
-      setSelectedGenres([...selectedGenres, genreId]); // Добавление жанра в выбранные, если он еще не выбран
-    }
-  };
-
-  const handleCombineGenres = () => {
-    // Отправить запрос на сервер с выбранными жанрами для получения комбинированных продуктов
-    fetch(`https://api.example.com/products?genres=${selectedGenres.join(',')}`)
-      .then(response => response.json())
-      .then(combinedProducts => {
-        // Обработать полученные комбинированные продукты
-        console.log(combinedProducts);
-      })
-      .catch(error => {
-        console.error('Произошла ошибка при получении комбинированных продуктов:', error);
-      });
-  };
-
   return (
-    <div>
-      <h2>Навигация по жанрам комиксов:</h2>
-      <ul>
+    <div className="CatalogPage">
+      <h2>Жанры</h2>
+      <ul className="genre-navigation">
         {genres.map(genre => (
-          <li key={genre.id}>
-            <button onClick={() => handleGenreClick(genre.id)}>{genre.name}</button>
-          </li>
+          <li key={genre.id}>{genre.name}</li>
         ))}
       </ul>
-      <button onClick={handleCombineGenres}>Комбинировать выбранные жанры</button>
     </div>
-  );
+  )
 }
 
 export default CatalogPage

@@ -43,6 +43,7 @@ function App() {
         <Route path='/promotions' element={<PromotionsPage />} />
         <Route path='/discounts' element={<DiscountsPage />} />
         <Route path='/agreement' element={<TermsOfUsePage />} />
+        <Route path='/catalog' element={<CatalogPage />} />
         {/* <Route path='/Wishlist' element={<Wishlist />} /> */}
       </Routes>
       <BottomBar />
