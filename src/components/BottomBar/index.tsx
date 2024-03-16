@@ -1,10 +1,10 @@
-import './style.css'
-import catalog from '../../assets/images/catalog.png'
-import cart from '../../assets/images/cart.png'
-import wishlist from '../../assets/images/wishlist.png'
-import account from '../../assets/images/account.png'
-import home from '../../assets/images/home.png'
 import { Link } from 'react-router-dom'
+import account from '../../assets/images/account.png'
+import cart from '../../assets/images/cart.png'
+import catalog from '../../assets/images/catalog.png'
+import home from '../../assets/images/home.png'
+import wishlist from '../../assets/images/wishlist.png'
+import './style.css'
 
 
 const BottomBar = () => {
@@ -33,7 +33,7 @@ const BottomBar = () => {
         <li>
           <Link to={"/wishlist"} className="bottom-bar-link">
             <img className="icon-bottom-bar" src={wishlist} alt="" />
-            <div className="bottom-bar-text">Избраное</div>
+            <div className="bottom-bar-text">Избранное</div>
           </Link>
         </li>
         <li>
