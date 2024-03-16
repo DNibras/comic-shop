@@ -1,6 +1,6 @@
 interface ProductModel {
   id: number;
-  img: string;
+  image: string;
   title: string;
   description: string;
   price: number;

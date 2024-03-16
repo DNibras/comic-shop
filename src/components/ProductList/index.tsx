@@ -19,7 +19,7 @@ const ProductList = () => {
             <div className="add-wishlist">&#x2764;</div>
           </Link>
           <div className="product-img-box">
-            <img src={product.img} alt="Товар" />
+            <img src={product.image} alt="Товар" />
           </div>
           <h4>{product.title}</h4>
           <p>{product.price}р.</p>
