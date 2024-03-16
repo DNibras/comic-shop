@@ -1,21 +1,23 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { uiContext } from "../../../Contexts";
 import loupe from "../../../assets/images/loupe.png";
 import "./style.css";
 
 const Search = () => {
   const [isActive, setIsActive] = useState(false);
+  const { setIsBackgroundShadowActive } = useContext(uiContext);
 
   const onSearchInputFocus = () => {
     setIsActive(!isActive);
+    setIsBackgroundShadowActive(true);
   };
 
   const onSearchInputBlur = () => {
     setIsActive(false);
+    setIsBackgroundShadowActive(false);
   };
 
   return (
-    // <>
-    //   <div className={isActive ? "Search_background" : ""}></div>
     <div className="Search">
       <div className="search-container">
         <form action="" className="search-form">
@@ -50,7 +52,6 @@ const Search = () => {
         </form>
       </div>
     </div>
-    // </>
   );
 };
 
