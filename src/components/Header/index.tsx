@@ -14,6 +14,7 @@ const Header = () => {
         </Link>
         <Search />
         <NavBar />
+        {/* <div className="shadow"></div> */}
       </header>
       <ProductSideMenu />
     </>

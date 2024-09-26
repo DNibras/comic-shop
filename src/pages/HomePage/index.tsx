@@ -12,6 +12,7 @@ function HomePage() {
       <Carousel />
       <Products />
     </div>
+    
   )
 }
 

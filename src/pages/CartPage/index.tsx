@@ -1,47 +1,60 @@
-import { useState } from 'react';
-import './style.css';
-
-interface Comic {
-  id: number;
-  title: string;
-  price: number;
-  quantity: number;
-}
+import { useMemo } from "react";
+import { Link } from "react-router-dom";
+import { useCart } from "../../storage/cart";
+import "./style.css";
 
 const CartPage = () => {
-  const [cart, setCart] = useState<Comic[]>([]);
+  const { cart, removeFromCart, decreaseQuantity, increaseQuantity } =
+    useCart();
 
-  const addToCart = (comic: Comic) => {
-    const existingItem = cart.find(item => item.id === comic.id);
-    if (existingItem) {
-      setCart(cart.map(item =>
-        item.id === comic.id ? { ...item, quantity: item.quantity + 1 } : item
-      ));
-    } else {
-      setCart([...cart, { ...comic, quantity: 1 }]);
-    }
-  };
-
-  const removeFromCart = (id: number) => {
-    setCart(cart.filter(item => item.id !== id));
-  };
-
-  const decreaseQuantity = (id: number) => {
-    setCart(cart.map(item =>
-      item.id === id ? { ...item, quantity: item.quantity - 1 } : item
-    ));
-  };
+  const calculateTotalSum = useMemo(
+    () =>
+      cart
+        .reduce((sum, comic) => sum + comic.price * comic.quantity, 0)
+        .toFixed(2),
+    [cart]
+  );
 
   return (
-    <div className="cart">
+    <div className="cartPage">
       {cart.map((comic) => (
-        <div key={comic.id}>
-          <span>{comic.title} - {comic.price}Руб. - Количество: {comic.quantity}</span>
-          <button onClick={() => removeFromCart(comic.id)}>&#8722;</button>
-          <button onClick={() => decreaseQuantity(comic.id)}>&#8722;</button>
-          <button onClick={() => addToCart(comic)}>&#43;</button>
+        <div className="cartPage-item" key={comic.id}>
+          <div className="cartPage-item-container-img">
+            <Link to={`/product/${comic.id}`}><img src={comic.image} alt={comic.title} /></Link>
+          </div>
+          <span>{comic.title}</span>
+          <div className="cartPage-container">
+            <div className="cartPage-container-quantity">
+              <button
+                className="cartPageButton"
+                onClick={() => decreaseQuantity(comic.id)}
+              >
+                &#8722;
+              </button>
+              <span className="cartPage-item-quantity"> : {comic.quantity} </span>
+              <button
+                className="cartPageButton"
+                onClick={() => increaseQuantity(comic.id)}
+              >
+                &#43;
+              </button>
+            </div>
+            <span className="cartPage-price">
+              {(comic.price * comic.quantity).toFixed(2)} Руб.
+            </span>
+            <button
+              className="cartPageButton delete"
+              onClick={() => removeFromCart(comic.id)}
+            >
+              &#10006;
+            </button>
+          </div>
         </div>
       ))}
+      <div className="cartPage-total">
+        <span>Итого: {calculateTotalSum} Руб.</span>
+        <button className="cartPageButton-total">Оплатить</button>
+      </div>
     </div>
   );
 };

@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { uiContext } from "./Contexts";
 import BackgroundShadow from "./components/BackgroundShadow";
 import BottomBar from "./components/BottomBar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import LoginProfile from "./components/LoginProfile";
 import RegisterProfile from "./components/RegisterProfile";
+import { uiContext } from "./contexts";
 import CareerPage from "./pages/CareerPage";
 import CartPage from "./pages/CartPage";
 import CatalogPage from "./pages/CatalogPage";
@@ -18,6 +18,7 @@ import InformationPage from "./pages/InformationPage";
 import PartnershipPage from "./pages/PartnershipPage";
 import PasswordRecoveryPage from "./pages/PasswordRecoveryPage";
 import PaymentPage from "./pages/PaymentPage";
+import ProductPage from "./pages/ProductPage";
 import PromotionsPage from "./pages/PromotionsPage";
 import StoreAddressesPage from "./pages/StoreAddressesPage";
 import TermsOfUsePage from "./pages/TermsOfUsePage";
@@ -37,7 +38,7 @@ function App() {
     <div className="App">
       <uiContext.Provider value={initialUiContextState}>
         <Header />
-        <Routes>
+        <Routes>         
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginProfile />} />
           <Route path="/catalog" element={<CatalogPage />} />
@@ -54,6 +55,7 @@ function App() {
           <Route path="/discounts" element={<DiscountsPage />} />
           <Route path="/agreement" element={<TermsOfUsePage />} />
           <Route path="/catalog" element={<CatalogPage />} />
+          <Route path="/product/:id" element={<ProductPage />} />
           {/* <Route path='/Wishlist' element={<Wishlist />} /> */}
         </Routes>
         <BottomBar />

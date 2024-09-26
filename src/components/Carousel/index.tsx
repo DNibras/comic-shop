@@ -1,9 +1,17 @@
 import { useEffect, useRef, useState } from "react";
+import { useCart } from "../../storage/cart";
 import "./style.css";
 
 const Carousel = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [products, setProducts] = useState<ProductModel[]>([]);
+  const { addToCart } = useCart();
+
+  const onAddToCart = (product: ProductModel) => {
+    return () => {
+      addToCart(product);
+    };
+  };
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -57,8 +65,8 @@ const Carousel = () => {
               <img src={product.image} alt="Рекомендуемый продукт" />
             </div>
             <div className="carousel-item-info">
-              <p>{truncateText(product.description, 200)}</p>
-              <button className="carousel-item-button">Купить</button>
+              <p>{truncateText(product.description, 220)}</p>
+              <button className="carousel-item-button" onClick={onAddToCart(product)}>В корзину</button>
             </div>
           </div>
         ))}

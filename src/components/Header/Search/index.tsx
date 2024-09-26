@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
-import { uiContext } from "../../../Contexts";
 import loupe from "../../../assets/images/loupe.png";
+import { uiContext } from "../../../contexts";
 import "./style.css";
 
 const Search = () => {
@@ -18,7 +18,11 @@ const Search = () => {
   };
 
   return (
-    <div className="Search">
+    <div
+      className={
+        "Search " + (isActive ? "Search__enabled" : "")
+      }
+    >
       <div className="search-container">
         <form action="" className="search-form">
           <div className="search-box">
@@ -33,13 +37,7 @@ const Search = () => {
               onBlur={onSearchInputBlur}
             />
           </div>
-          <div
-            className={
-              isActive
-                ? "search-options-container__enabled"
-                : "search-options-container"
-            }
-          >
+          <div className={"search-options-container"}>
             <h4>Возможно вам понравится: </h4>
             <ul className="search-options">
               <li>Черепашки ниндзя</li>

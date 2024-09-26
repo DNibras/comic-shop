@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { uiContext } from "../../Contexts";
+import { uiContext } from "../../contexts";
 import "./style.css";
 
 const BackgroundShadow = () => {

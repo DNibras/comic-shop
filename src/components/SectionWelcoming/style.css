@@ -5,6 +5,14 @@
   text-align      : center;
 }
 
+.welcoming h2 {
+  margin: 0.5em;
+}
+
+.welcoming p {
+  margin: 1em;
+}
+
 .brands {
   display        : flex;
   flex-direction : row;

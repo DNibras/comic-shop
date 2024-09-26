@@ -37,7 +37,7 @@
 
 .carousel-item p {
   margin       : 0;
-  padding      : 0.5em;
+  padding      : 0.5em 1em;
   width        : 160px;
   overflow     : hidden;
   text-overflow: ellipsis;
@@ -46,6 +46,7 @@
 .carousel-item-button {
   display         : block;
   margin          : auto;
+  margin-bottom   : 2em;
   padding         : 0.6em 1em;
   background-color: var(--button-color);
   color           : var(--primary-color);
@@ -53,7 +54,7 @@
   outline         : none;
   box-shadow      : 0 3px var(--button-shadow-color);
   cursor          : pointer;
-  
+
 }
 
 .carousel-item-button:active {
@@ -62,7 +63,7 @@
 }
 
 .carousel-item:hover .carousel-item-info {
-  display: grid;
+  display    : grid;
   grid-column: auto;
 }
 

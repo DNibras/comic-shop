@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import './style.css';
 
 interface Genre {
@@ -20,7 +21,9 @@ const CatalogPage = () => {
       <h2>Жанры</h2>
       <ul className="genre-navigation">
         {genres.map(genre => (
-          <li key={genre.id}>{genre.name}</li>
+          <li key={genre.id}>
+            <Link to={`/catalog/${genre.name}`}>{genre.name}</Link>
+            </li>
         ))}
       </ul>
     </div>

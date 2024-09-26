@@ -1,8 +1,11 @@
 import { useState } from "react";
+import useFetch from "../../../hooks/useFetch";
+import open1 from "./images/open1.png";
 import "./style.css";
 
 const ProductSideMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { data: products } = useFetch<ProductModel[]>("https://fakestoreapi.com/products");
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -12,21 +15,21 @@ const ProductSideMenu = () => {
     <aside className="ProductSideMenu">
       <ul
         className={
-          isOpen ? "ProductSideMenu-list_open" : "ProductSideMenu-list"
+          "ProductSideMenu-list " + (isOpen ? "ProductSideMenu-list_open" : "")
         }
       >
-        <li>Ужасы</li>
-        <li>Фэнтези</li>
-        <li>Боевик</li>
-        <li>Детектив</li>
+        {products && products.map(product => (
+          <li key={product.id}>{product.category}</li>
+        ))}
       </ul>
       <button
         onClick={handleClick}
         className={
-          isOpen ? "ProductSideMenu-button_open" : "ProductSideMenu-button"
+          "ProductSideMenu-button " +
+          (isOpen ? "ProductSideMenu-button_open" : "")
         }
       >
-        <p>&gt;</p>
+        <img className="ProductSideMenu-img" src={open1} alt="" />
       </button>
     </aside>
   );

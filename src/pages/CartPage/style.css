@@ -1,22 +1,95 @@
-.cart-item {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
+.cartPage {
+  margin: 1em;
 }
 
-.cart-item span {
-  margin-right: 10px;
+.cartPage-item {
+  display              : grid;
+  grid-template-columns: max-content 1fr 3fr;
+  margin-bottom        : 1em;
+  padding              : 1em 2em;
+  box-shadow           : 0 0 10px rgba(0, 0, 0, 0.5);
+  align-items          : center;
+  max-width            : 70em;
 }
 
-.cart-item button {
-  margin-right: 5px;
-  cursor: pointer;
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+.cartPage-item-container-img {
+  height: 7em;
+  margin-right: 1em;
 }
 
-.cart-item button:hover {
-  background-color: #0056b3;
+.cartPage-item-container-img img {
+  height: 100%;
+}
+
+.cartPage-container {
+  display        : flex;
+  flex-direction : row;
+  justify-content: flex-end;
+}
+
+.cartPage-container-quantity {
+  display       : flex;
+  flex-direction: row;
+  padding: 0 3em;
+}
+
+.cartPage-item-quantity {
+  display        : flex;
+  flex-direction : row;
+  white-space    : nowrap;
+  justify-self   : center;
+  justify-content: center;
+  align-items    : center;
+  width          : 3em;
+}
+
+.cartPage-price {
+  display    : block;
+  width      : 7em;
+  font-weight: 500;
+  white-space: nowrap;
+  text-align : end;
+  align-self : center;
+}
+
+.cartPageButton {
+  background-color: var(--button-color);
+  color           : var(--primary-color);
+  box-shadow      : 0 3px var(--button-shadow-color);
+  padding         : 0.6em 0.8em;
+  border          : none;
+  outline         : none;
+  width           : fit-content;
+}
+
+.cartPage-total {
+  display        : flex;
+  justify-content: flex-end;
+  align-items    : center;
+}
+
+.cartPage-total span {
+  font-size  : larger;
+  font-weight: 500;
+}
+
+.delete {
+  margin-left: 1em;
+}
+
+.cartPageButton-total {
+  margin-left     : 1em;
+  background-color: var(--button-color);
+  color           : var(--primary-color);
+  box-shadow      : 0 3px var(--button-shadow-color);
+  padding         : 0.6em;
+  border          : none;
+  outline         : none;
+  width           : fit-content;
+}
+
+.cartPageButton:active,
+.cartPageButton-total:active {
+  box-shadow: 0 0 var(--button-shadow-color);
+  transform : translateY(3px);
 }
